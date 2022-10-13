@@ -1,0 +1,47 @@
+<div class="main">
+  <div class="container">
+    <div class="content-page-signIn">
+      <div class="content-form-signIn">
+        <h2>{{request.translate.title_sign_in}}</h2>
+        <p>{{request.translate.subtitle_sign_in}}</p>
+        <div class="div-form-signIn">
+          <form>
+            <div class="div-input-email-signIn">
+              <input type="email" placeholder="{{request.translate.placeholder_email_sign_in}}">
+            </div>
+            <div class="div-input-password-signIn">
+              <input [type]="password" placeholder="{{request.translate.placeholder_password_sign_in}}">
+              <button type="button" (click)="onClickPass()">
+                <img src="assets/Images/hidePassword.png" aria-hidden="true" *ngIf="!show" alt="No images" class="show">
+                <img src="assets/Images/showPassword.png" aria-hidden="true" *ngIf="show" alt="No images" class="show">
+              </button>
+            </div>
+            <div class="div-forgot-password">
+              <a routerLink="/recover-password">{{request.translate.forgot_password}}</a>
+            </div>
+            <div class="div-button-signIn">
+              <button>
+                <a href="#">{{request.translate.btn_sign_in}}</a>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="div-reg-teacher-or-donor">
+          <h3>{{request.translate.title_reg_as}}</h3>
+          <div class="div-buttons-teacher-donor">
+            <button>
+              <a routerLink="/sign-up">
+                {{request.translate.btn_teacher}}
+              </a>
+            </button>
+            <button>
+              <a routerLink="/sign-up-donors">
+                {{request.translate.btn_donor}}
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

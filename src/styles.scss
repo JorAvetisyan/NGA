@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'Assistant';
+  src: url('assets/Fonts/AssistantFont/Assistant-ExtraBold.woff2') format('woff2'),
+  url('assets/Fonts/AssistantFont/Assistant-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Assistant';
+  src: url('assets/Fonts/AssistantFont/Assistant-ExtraLight.woff2') format('woff2'),
+  url('assets/Fonts/AssistantFont/Assistant-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Assistant';
+  src: url('assets/Fonts/AssistantFont/Assistant-Bold.woff2') format('woff2'),
+  url('assets/Fonts/AssistantFont/Assistant-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Assistant';
+  src: url('assets/Fonts/AssistantFont/Assistant-Regular.woff2') format('woff2'),
+  url('assets/Fonts/AssistantFont/Assistant-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Assistant';
+  src: url('assets/Fonts/AssistantFont/Assistant-Medium.woff2') format('woff2'),
+  url('assets/Fonts/AssistantFont/Assistant-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Assistant';
+  src: url('assets/Fonts/AssistantFont/Assistant-Light.woff2') format('woff2'),
+  url('assets/Fonts/AssistantFont/Assistant-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Assistant';
+  src: url('assets/Fonts/AssistantFont/Assistant-SemiBold.woff2') format('woff2'),
+  url('assets/Fonts/AssistantFont/Assistant-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+$color_green: #34C88A;
+$color_blue: #194866;
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+*{
+  box-sizing: border-box;
+}

@@ -1,0 +1,40 @@
+<div class="main">
+  <div class="logo_languages">
+    <div class="container">
+      <div class="logo">
+        <div class="icon_logo" routerLink="/home">
+          <img src="assets/Images/logo.png" alt="No image">
+          <span>{{request.translate.logo_text}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="languages">
+      <button (click)="request.changeLang('en')" class="btn_languages">Eng</button>
+      <button (click)="request.changeLang('hy')" class="btn_languages">Հայ</button>
+      <button (click)="request.changeLang('ru')" class="btn_languages">Рус</button>
+    </div>
+  </div>
+  <div class="menu">
+    <div class="container">
+      <div class="content_menu">
+        <div class="ul_menu">
+          <ul>
+            <li class="li_menu"><a routerLink="/sign-up" routerLinkActive="active" class="link_menu">{{request.translate.menu_teachers}}</a></li>
+            <li class="li_menu"><a routerLink="/sign-up-donors" routerLinkActive="active" class="link_menu">{{request.translate.menu_donors}}</a></li>
+            <li class="li_menu"><a routerLink="/about_us" routerLinkActive="active" class="link_menu">{{request.translate.menu_about_us}}</a></li>
+            <li class="li_menu"><a routerLink="/contact_us" routerLinkActive="active" class="link_menu">{{request.translate.menu_contact_us}}</a></li>
+            <li class="li_menu"><a routerLink="/blog" routerLinkActive="active" class="link_menu">{{request.translate.menu_blog}}</a></li>
+          </ul>
+        </div>
+        <div class="sign_in">
+          <a routerLink="/sign-in">
+            <img src="assets/Images/coolicon.png" alt="No image">
+            <span>{{request.translate.sign_in}}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
