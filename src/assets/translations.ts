@@ -71,10 +71,15 @@ export const translations = {
     btn_ok_verify: 'Ok',
     title_about_us: 'About us',
     title_contact_us: 'Contact us',
-    title_blog: 'Blog'
-
-
-
+    title_blog: 'Blog',
+    placeholder_select_code: 'Select Code',
+    placeholder_country: 'Country',
+    placeholder_region_state: 'Region/State',
+    placeholder_city: 'City',
+    reg_as_teacher: 'Register as a Teacher',
+    title_modal_signIn: 'If you leave this page now, all your progress will be lost',
+    btn_continue_modal: 'Continue registration',
+    btn_leave_anyway_modal: 'Leave anyway'
   },
   hy: {
     logo_text: 'Հաջորդ սերունդ Հայաստան',
@@ -148,7 +153,15 @@ export const translations = {
     btn_ok_verify: 'Հաջորդ ',
     title_about_us: 'Մեր մասին',
     title_contact_us: 'Կապ մեզ հետ',
-    title_blog: 'Բլոգ'
+    title_blog: 'Բլոգ',
+    placeholder_select_code: 'Ընտրեք կոդը',
+    placeholder_country: 'Երկիր',
+    placeholder_region_state: 'Տարածաշրջան/նահանգ',
+    placeholder_city: 'Քաղաք',
+    reg_as_teacher: 'Գրանցվեք որպես ուսուցիչ',
+    title_modal_signIn: 'Եթե հիմա հեռանաք այս էջից, ձեր բոլորը առաջընթացը կկորչի',
+    btn_continue_modal: 'Շարունակել գրանցումը',
+    btn_leave_anyway_modal: 'Ինչևէ, հեռացիր'
   },
   ru: {
     logo_text: 'Армения нового поколения',
@@ -222,6 +235,14 @@ export const translations = {
     btn_ok_verify: 'Далее',
     title_about_us: 'О нас',
     title_contact_us: 'Свяжитесь с нами',
-    title_blog: 'Блог'
+    title_blog: 'Блог',
+    placeholder_select_code: 'Выберите код',
+    placeholder_country: 'Страна',
+    placeholder_region_state: 'Регион/штат',
+    placeholder_city: 'Город',
+    reg_as_teacher: 'Зарегистрироваться как учитель',
+    title_modal_signIn: 'Если вы сейчас покинете эту страницу, все ваши прогресс будет потерян',
+    btn_continue_modal: 'Продолжить регистрацию',
+    btn_leave_anyway_modal: 'Все равно уйти'
   }
 }

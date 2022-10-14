@@ -186,7 +186,7 @@
           display: none !important;
         }
 
-        ::ng-deep .multiselect-dropdown .dropdown-btn {
+        ::ng-deep .dropdown-btn {
           font-family: 'Assistant';
           font-style: normal;
           font-weight: 400;
@@ -198,28 +198,156 @@
           padding: 12px 40px 12px 16px;
         }
 
+        ::ng-deep .dropdown-list {
+          svg {
+            color: $color_blue;
+          }
+
+          ul.item1 {
+            li:first-child {
+              display: none;
+            }
+          }
+        }
+
         .div-input-city {
           position: relative;
+
+          ::ng-deep .selected-item {
+            border: 1px solid #34C88A;
+            margin-right: 4px;
+            background: #34C88A;
+            padding: 0 5px;
+            color: #fff;
+            border-radius: 2px;
+            float: left;
+            display: flex;
+            max-width: 100px;
+          }
+
+          span {
+            position: absolute;
+            z-index: 4;
+            top: -12px;
+            left: 14px;
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            color: #D80027;
+            background-image: linear-gradient(#F8F8F8, white);
+          }
 
           img {
             position: absolute;
             top: 22px;
             right: 15px;
           }
+
         }
 
         .div-input-school {
           position: relative;
 
+          ::ng-deep .selected-item {
+            border: 1px solid #34C88A;
+            margin-right: 4px;
+            background: #34C88A;
+            padding: 0 5px;
+            color: #fff;
+            border-radius: 2px;
+            float: left;
+            display: flex;
+            max-width: 100px;
+          }
+
+          span {
+            position: absolute;
+            z-index: 4;
+            top: -12px;
+            left: 14px;
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            color: #D80027;
+            background-image: linear-gradient(#F8F8F8, white);
+          }
+
           img {
             position: absolute;
             top: 22px;
             right: 15px;
           }
+
+          ::ng-deep .multiselect-item-checkbox input[type=checkbox] + div:before {
+            left: 95%;
+            padding: 0 !important;
+            background: rgba(25, 72, 102, 0.2);
+            border-color: rgba(25, 72, 102, 0.2);
+            display: none;
+          }
+
+          ::ng-deep .multiselect-item-checkbox input[type=checkbox]:checked + div:before {
+            border-color: #34C88A;
+            background: #34C88A;
+            display: none;
+          }
+
+          ::ng-deep .multiselect-item-checkbox input[type=checkbox] + div:after {
+            display: none;
+            left: 96%;
+            border-color: #FFFFFF;
+          }
         }
 
         .div-input-subject {
           position: relative;
+
+          ::ng-deep .selected-item {
+            border: 1px solid #34C88A;
+            margin-right: 4px;
+            background: #34C88A;
+            padding: 0 5px;
+            color: #fff;
+            border-radius: 2px;
+            float: left;
+            display: flex;
+            max-width: 100px;
+          }
+
+          ::ng-deep .multiselect-item-checkbox input[type=checkbox] + div:before {
+            left: 95%;
+            padding: 0 !important;
+            background: rgba(25, 72, 102, 0.2);
+            border-color: rgba(25, 72, 102, 0.2);
+          }
+
+          ::ng-deep .multiselect-item-checkbox input[type=checkbox]:checked + div:before {
+            border-color: #34C88A;
+            background: #34C88A;
+          }
+
+          ::ng-deep .multiselect-item-checkbox input[type=checkbox] + div:after {
+            left: 96%;
+            border-color: #FFFFFF;
+          }
+
+          span {
+            position: absolute;
+            z-index: 4;
+            top: -12px;
+            left: 14px;
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            color: #D80027;
+            background-image: linear-gradient(#F8F8F8, white);
+          }
 
           img {
             position: absolute;
@@ -230,6 +358,49 @@
 
         .div-input-grade {
           position: relative;
+
+          ::ng-deep .selected-item {
+            border: 1px solid #34C88A;
+            margin-right: 4px;
+            background: #34C88A;
+            padding: 0 5px;
+            color: #fff;
+            border-radius: 2px;
+            float: left;
+            display: flex;
+            max-width: 100px;
+          }
+
+          ::ng-deep .multiselect-item-checkbox input[type=checkbox] + div:before {
+            left: 95%;
+            padding: 0 !important;
+            background: rgba(25, 72, 102, 0.2);
+            border-color: rgba(25, 72, 102, 0.2);
+          }
+
+          ::ng-deep .multiselect-item-checkbox input[type=checkbox]:checked + div:before {
+            border-color: #34C88A;
+            background: #34C88A;
+          }
+
+          ::ng-deep .multiselect-item-checkbox input[type=checkbox] + div:after {
+            left: 96%;
+            border-color: #FFFFFF;
+          }
+
+          span {
+            position: absolute;
+            z-index: 4;
+            top: -12px;
+            left: 14px;
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            color: #D80027;
+            background-image: linear-gradient(#F8F8F8, white);
+          }
 
           img {
             position: absolute;
@@ -325,6 +496,7 @@
             line-height: 24px;
             text-align: center;
             color: #34C88A;
+
           }
 
           button {
@@ -332,8 +504,8 @@
             border-radius: 10px;
             color: white;
             border: none;
-            padding: 12px 25px;
             cursor: pointer;
+            padding: 16px 39px;
           }
         }
       }
@@ -365,10 +537,6 @@
 
     ::ng-deep .div-mat-stepper {
       width: 503px !important;
-    }
-
-    ::ng-deep .mat-stepper-header-position-bottom .mat-horizontal-content-container {
-
     }
 
     ::ng-deep .mat-stepper-header-position-bottom .mat-horizontal-stepper-header-container {
@@ -420,7 +588,7 @@
           p {
             margin: 16px 0;
             padding-bottom: 16px;
-            border-bottom:  0.5px solid rgba(25, 72, 102, 0.5);
+            border-bottom: 0.5px solid rgba(25, 72, 102, 0.5);
             font-family: 'Assistant';
             font-style: normal;
             font-weight: 400;
@@ -429,20 +597,24 @@
             text-align: center;
             color: $color-blue;
           }
-          .div-input-code-verify{
+
+          .div-input-code-verify {
             width: 100%;
+
             input::-webkit-outer-spin-button,
             input::-webkit-inner-spin-button {
               -webkit-appearance: none;
               margin: 0;
             }
-            input{
+
+            input {
               padding: 16px 44px 16px 16px;
               border: 0.5px solid rgba(25, 72, 102, 0.8);
               border-radius: 10px;
               width: 100%;
             }
-            input::placeholder{
+
+            input::placeholder {
               font-family: 'Assistant';
               font-style: normal;
               font-weight: 400;
@@ -451,17 +623,20 @@
               color: $color_blue;
             }
           }
-          .div-btn-ok-verify{
+
+          .div-btn-ok-verify {
             margin: 532px 0 24px;
             display: flex;
             justify-content: center;
             align-items: center;
-            button{
+
+            button {
               background-color: #34C88A;
               border-radius: 10px;
               width: 100%;
               border: none;
-              a{
+
+              a {
                 display: inline-block;
                 padding: 12px 165px;
                 text-decoration: none;
@@ -479,4 +654,30 @@
       }
     }
   }
+
+  .errorCity {
+    ::ng-deep .dropdown-btn {
+      border: 0.5px solid red !important;
+
+    }
+  }
+
+  .errorSchool {
+    ::ng-deep .dropdown-btn {
+      border: 0.5px solid red !important;
+    }
+  }
+
+  .errorSubject {
+    ::ng-deep .dropdown-btn {
+      border: 0.5px solid red !important;
+    }
+  }
+
+  .errorGrade {
+    ::ng-deep .dropdown-btn {
+      border: 0.5px solid red !important;
+    }
+  }
+
 }

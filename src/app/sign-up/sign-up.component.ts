@@ -42,7 +42,7 @@ export class SignUpComponent implements OnInit {
     textField: 'item_text',
     selectAllText: 'Select All',
     unSelectAllText: 'UnSelect All',
-    itemsShowLimit: 1,
+    itemsShowLimit: 3,
     allowSearchFilter: true
   };
   form_sign_up = this.fb.group({
@@ -52,7 +52,12 @@ export class SignUpComponent implements OnInit {
     phone_short_code: ['',Validators.pattern(/[^a-zA-Z]^[0-9]$/)],
     phone_number: [''],
     pass: ['',[Validators.required,Validators.maxLength(20),Validators.minLength(6)]],
-    confirm_pass: ['']
+    confirm_pass: [''],
+    reg: ['', [Validators.required]],
+    city: ['', [Validators.required]],
+    school: ['', [Validators.required]],
+    subject: ['', [Validators.required]],
+    grade: ['', [Validators.required]]
   })
   constructor(
     public request: RequestService,

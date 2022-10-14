@@ -1,22 +1,27 @@
 @import "src/styles";
-.main{
+
+.main {
   width: 100%;
   padding: 16px 0;
-  .container{
+
+  .container {
     width: 1280px;
     margin: 0 auto;
-    .content-page-donors{
+
+    .content-page-donors {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      .div-form-sign-up-donors{
+
+      .div-form-sign-up-donors {
         width: 432px;
         background: #F8F8F8;
         box-shadow: 0 1px 24px rgba(61, 61, 61, 0.18);
         border-radius: 20px;
         padding: 0 16px;
-        h2{
+
+        h2 {
           margin: 32px 0 16px;
           font-family: 'Assistant';
           font-style: normal;
@@ -27,10 +32,11 @@
           text-transform: capitalize;
           color: #194866;
         }
-        p{
+
+        p {
           margin: 0 0 16px;
           padding-bottom: 16px;
-          border-bottom:  0.5px solid rgba(25, 72, 102, 0.5);
+          border-bottom: 0.5px solid rgba(25, 72, 102, 0.5);
           font-family: 'Assistant';
           font-style: normal;
           font-weight: 400;
@@ -38,6 +44,394 @@
           line-height: 24px;
           text-align: center;
           color: $color_blue;
+        }
+
+        form {
+          div:nth-child(-n+7) {
+            margin-bottom: 16px;
+          }
+        }
+
+        ::ng-deep .multiselect-dropdown .dropdown-btn {
+          border: 0.5px solid rgba(25, 72, 102, 0.8);
+          border-radius: 10px;
+          padding: 12px 44px 12px 12px;
+
+        }
+
+        ::ng-deep .dropdown-multiselect__caret {
+          display: none;
+        }
+
+        .div-form-reg-donors {
+          width: 100%;
+
+          input {
+            border: 0.5px solid rgba(25, 72, 102, 0.8);
+            padding: 12px 44px 12px 16px;
+          }
+
+          input::placeholder {
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color_blue;
+          }
+
+          .div-inputs-name-lastname-donors {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            position: relative;
+            span:first-child{
+              position: absolute;
+              z-index: 4;
+              top: -12px;
+              left: 14px;
+              font-family: 'Assistant';
+              font-style: normal;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 24px;
+              color: #D80027;
+              background-image: linear-gradient(#F8F8F8, white);
+            }
+            span:nth-child(2){
+              position: absolute;
+              z-index: 4;
+              top: -12px;
+              right: 53px;
+              font-family: 'Assistant';
+              font-style: normal;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 24px;
+              color: #D80027;
+              background-image: linear-gradient(#F8F8F8, white);
+            }
+            input {
+              width: 48%;
+              border-radius: 10px;
+            }
+          }
+
+          .div-input-email-donors {
+            width: 100%;
+
+            input {
+              width: 100%;
+              border-radius: 10px;
+            }
+          }
+
+          .div-phone-number-select {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+            }
+
+            .div-select-short-code-number {
+              width: 35%;
+              position: relative;
+              margin: 0;
+
+              select {
+                padding: 12px 16px 12px;
+                border: 0.5px solid rgba(25, 72, 102, 0.8);
+                border-radius: 10px 0 0 10px;
+                width: 100%;
+                appearance: none;
+                font-family: 'Assistant';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: $color_blue;
+              }
+
+              img {
+                position: absolute;
+                top: 22px;
+                left: 115px;
+              }
+
+            }
+
+            .div-input-number-donors {
+              width: 65%;
+              margin: 0;
+
+              input {
+                border-radius: 0 10px 10px 0;
+                width: 100%;
+              }
+            }
+
+          }
+
+          .div-country-reg-donors {
+            position: relative;
+            span {
+              position: absolute;
+              z-index: 4;
+              top: -12px;
+              left: 14px;
+              font-family: 'Assistant';
+              font-style: normal;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 24px;
+              color: #D80027;
+              background-image: linear-gradient(#F8F8F8, white);
+            }
+            ::ng-deep .selected-item {
+              border: 1px solid #34C88A;
+              margin-right: 4px;
+              background: #34C88A;
+              padding: 0 5px;
+              color: #fff;
+              border-radius: 2px;
+              float: left;
+              display: flex;
+              max-width: 100px;
+            }
+
+            ::ng-deep .multiselect-item-checkbox input[type=checkbox] + div:before {
+              left: 95%;
+              padding: 0 !important;
+              background: rgba(25, 72, 102, 0.2);
+              border-color: rgba(25, 72, 102, 0.2);
+              display: none;
+            }
+
+            ::ng-deep .multiselect-item-checkbox input[type=checkbox]:checked + div:before {
+              border-color: #34C88A;
+              background: #34C88A;
+              display: none;
+            }
+
+            ::ng-deep .multiselect-item-checkbox input[type=checkbox] + div:after {
+              left: 96%;
+              border-color: #FFFFFF;
+              display: none;
+            }
+
+            img {
+              position: absolute;
+              top: 22px;
+              right: 15px;
+            }
+          }
+
+          ::ng-deep .dropdown-list {
+            svg {
+              color: $color_blue;
+            }
+
+            ul.item1 {
+              li:first-child {
+                display: none;
+              }
+            }
+          }
+
+          .div-region-reg-donors {
+            position: relative;
+            span {
+              position: absolute;
+              z-index: 4;
+              top: -12px;
+              left: 14px;
+              font-family: 'Assistant';
+              font-style: normal;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 24px;
+              color: #D80027;
+              background-image: linear-gradient(#F8F8F8, white);
+            }
+            ::ng-deep .selected-item {
+              border: 1px solid #34C88A;
+              margin-right: 4px;
+              background: #34C88A;
+              padding: 0 5px;
+              color: #fff;
+              border-radius: 2px;
+              float: left;
+              display: flex;
+              max-width: 100px;
+            }
+
+            ::ng-deep .multiselect-item-checkbox input[type=checkbox] + div:before {
+              left: 95%;
+              padding: 0 !important;
+              background: rgba(25, 72, 102, 0.2);
+              border-color: rgba(25, 72, 102, 0.2);
+              display: none;
+            }
+
+            ::ng-deep .multiselect-item-checkbox input[type=checkbox]:checked + div:before {
+              border-color: #34C88A;
+              background: #34C88A;
+              display: none;
+            }
+
+            ::ng-deep .multiselect-item-checkbox input[type=checkbox] + div:after {
+              left: 96%;
+              border-color: #FFFFFF;
+              display: none;
+            }
+
+            img {
+              position: absolute;
+              top: 22px;
+              right: 15px;
+            }
+          }
+
+          .div-city-reg-donors {
+            position: relative;
+            span {
+              position: absolute;
+              z-index: 4;
+              top: -12px;
+              left: 14px;
+              font-family: 'Assistant';
+              font-style: normal;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 24px;
+              color: #D80027;
+              background-image: linear-gradient(#F8F8F8, white);
+            }
+            ::ng-deep .selected-item {
+              border: 1px solid #34C88A;
+              margin-right: 4px;
+              background: #34C88A;
+              padding: 0 5px;
+              color: #fff;
+              border-radius: 2px;
+              float: left;
+              display: flex;
+              max-width: 100px;
+            }
+
+            ::ng-deep .multiselect-item-checkbox input[type=checkbox] + div:before {
+              left: 95%;
+              padding: 0 !important;
+              background: rgba(25, 72, 102, 0.2);
+              border-color: rgba(25, 72, 102, 0.2);
+              display: none;
+            }
+
+            ::ng-deep .multiselect-item-checkbox input[type=checkbox]:checked + div:before {
+              border-color: #34C88A;
+              background: #34C88A;
+              display: none;
+            }
+
+            ::ng-deep .multiselect-item-checkbox input[type=checkbox] + div:after {
+              left: 96%;
+              border-color: #FFFFFF;
+              display: none;
+            }
+
+            img {
+              position: absolute;
+              top: 22px;
+              right: 15px;
+            }
+          }
+
+          .div-password-reg-donors {
+            width: 100%;
+            position: relative;
+
+            input {
+              width: 100%;
+              border: 0.5px solid rgba(25, 72, 102, 0.8);
+              border-radius: 10px;
+            }
+
+            button {
+              background-color: transparent;
+              border: none;
+              position: absolute;
+              top: 9px;
+              right: 13px;
+            }
+          }
+
+          .div-confirm-password-reg-donors {
+            width: 100%;
+            position: relative;
+
+            input {
+              width: 100%;
+              border: 0.5px solid rgba(25, 72, 102, 0.8);
+              border-radius: 10px;
+            }
+
+            button {
+              background-color: transparent;
+              border: none;
+              position: absolute;
+              top: 9px;
+              right: 13px;
+            }
+          }
+
+          .div-button-reg-as {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 84px 0 24px;
+
+            a {
+              font-family: 'Assistant';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 24px;
+              text-decoration-line: underline;
+              color: #34C88A;
+            }
+          }
+
+          button {
+            background: #34C88A;
+            border-radius: 10px;
+            border: none;
+
+            a {
+              font-family: 'Assistant';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 24px;
+              color: #FFFFFF !important;
+              text-decoration: none !important;
+              display: inline-block;
+              padding: 12px 39px;
+            }
+          }
+
+          ::ng-deep .dropdown-btn {
+            font-family: 'Assistant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #194866;
+          }
         }
       }
     }

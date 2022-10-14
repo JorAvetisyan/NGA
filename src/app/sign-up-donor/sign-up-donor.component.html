@@ -4,6 +4,111 @@
       <div class="div-form-sign-up-donors">
         <h2>{{request.translate.title_sign_up}}</h2>
         <p>{{request.translate.subtitle}}</p>
+        <div class="div-form-reg-donors">
+          <form [formGroup]="form_sign_up_donor">
+            <div class="div-inputs-name-lastname-donors">
+              <span *ngIf="form_sign_up_donor.controls.name?.hasError('required') && form_sign_up_donor.controls.name.touched">Name is required</span>
+              <span *ngIf="form_sign_up_donor.controls.last_name?.hasError('required') && form_sign_up_donor.controls.last_name.touched">Last name is required</span>
+              <input type="text" placeholder="{{request.translate.placeholder_name}}" formControlName="name">
+              <input type="text" placeholder="{{request.translate.placeholder_last_name}}" formControlName="last_name">
+            </div>
+            <div class="div-input-email-donors">
+              <input type="email" placeholder="{{request.translate.placeholder_email}}" formControlName="email">
+            </div>
+            <div class="div-phone-number-select">
+              <div class="div-select-short-code-number">
+                <select>
+                  <option hidden>{{request.translate.placeholder_select_code}}</option>
+                  <option>+374</option>
+                  <option>+7</option>
+                  <option>+112</option>
+                </select>
+                <img src="assets/Images/vector_bottom.png" alt="No image">
+              </div>
+              <div class="div-input-number-donors">
+                <input type="number" placeholder="{{request.translate.placeholder_phone_number}}"
+                       formControlName="phone_number">
+              </div>
+            </div>
+            <div class="div-country-reg-donors">
+              <span
+                *ngIf="form_sign_up_donor.controls.country?.hasError('required') && form_sign_up_donor.controls.country.touched">
+                         Country is required
+              </span>
+              <ng-multiselect-dropdown
+                [ngClass]="{'errorCountry': form_sign_up_donor.controls.country?.hasError('required') && form_sign_up_donor.controls.country.touched}"
+                [placeholder]=request.translate.placeholder_country
+                [settings]="dropdownSettings"
+                [data]="countriesList"
+                (onSelect)="onItemSelect($event)"
+                (onSelectAll)="onSelectAll($event)"
+                [formControl]="form_sign_up_donor.controls.country"
+              >
+              </ng-multiselect-dropdown>
+              <img src="assets/Images/vector_bottom.png" alt="No image">
+            </div>
+            <div class="div-region-reg-donors">
+              <span
+                *ngIf="form_sign_up_donor.controls.region?.hasError('required') && form_sign_up_donor.controls.region.touched">
+                         City is required
+              </span>
+              <ng-multiselect-dropdown
+                [ngClass]="{'errorRegion': form_sign_up_donor.controls.region?.hasError('required') && form_sign_up_donor.controls.region.touched}"
+                [placeholder]=request.translate.placeholder_region_state
+                [settings]="dropdownSettings"
+                [data]="regionList"
+                (onSelect)="onItemSelect($event)"
+                (onSelectAll)="onSelectAll($event)"
+                [formControl]="form_sign_up_donor.controls.region"
+              >
+              </ng-multiselect-dropdown>
+              <img src="assets/Images/vector_bottom.png" alt="No image">
+            </div>
+            <div class="div-city-reg-donors">
+              <span
+                *ngIf="form_sign_up_donor.controls.city?.hasError('required') && form_sign_up_donor.controls.city.touched">
+                         Region is required
+              </span>
+              <ng-multiselect-dropdown
+                [ngClass]="{'errorCountry': form_sign_up_donor.controls.city?.hasError('required') && form_sign_up_donor.controls.city.touched}"
+                [placeholder]=request.translate.placeholder_city_or_village
+                [settings]="dropdownSettings"
+                [data]="citiesList"
+                (onSelect)="onItemSelect($event)"
+                (onSelectAll)="onSelectAll($event)"
+                [formControl]="form_sign_up_donor.controls.city"
+              >
+              </ng-multiselect-dropdown>
+              <img src="assets/Images/vector_bottom.png" alt="No image">
+            </div>
+            <div class="div-password-reg-donors">
+              <input [type]="password" placeholder="{{request.translate.placeholder_password}}">
+              <button type="button" (click)="onClickPassword()">
+                <img src="assets/Images/hidePassword.png" aria-hidden="true" *ngIf="!show" alt="No images" class="show">
+                <img src="assets/Images/showPassword.png" aria-hidden="true" *ngIf="show" alt="No images" class="show">
+              </button>
+            </div>
+            <div class="div-confirm-password-reg-donors">
+              <input [type]="confirmPassword" placeholder="{{request.translate.placeholder_confirm_password}}">
+              <button type="button" (click)="onClickConfirmPassword()">
+                <img src="assets/Images/hidePassword.png" aria-hidden="true" *ngIf="!show_confirm" alt="No images"
+                     class="show">
+                <img src="assets/Images/showPassword.png" aria-hidden="true" *ngIf="show_confirm" alt="No images"
+                     class="show">
+              </button>
+            </div>
+            <div class="div-button-reg-as">
+              <a routerLink="/sign-up">
+                {{request.translate.reg_as_teacher}}
+              </a>
+              <button>
+                <a href="#">
+                  {{request.translate.btn_ok}}
+                </a>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
