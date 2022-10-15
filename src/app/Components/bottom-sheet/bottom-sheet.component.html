@@ -1,0 +1,75 @@
+<!--  Bottom shit-->
+<mat-nav-list>
+  <div class="bottomSheet">
+    <div class="bottomSheet__wrapper">
+      <div class="bottomSheet__greenLine"></div>
+      <div class="bottomSheet__menuWrapper">
+            <ul class="bottomSheet__menuWrapper__list">
+              <li class="bottomSheet__menuWrapper__list__item">
+                <a routerLink="/sign-in" class="bottomSheet__menuWrapper__list__item__link">
+                    {{translate.translate.mobile_menu_home}}
+                </a>
+              </li>
+              <li class="bottomSheet__menuWrapper__list__item">
+                <a routerLink="/sign-up" class="bottomSheet__menuWrapper__list__item__link">
+                  {{translate.translate.menu_teachers}}
+                </a>
+              </li>
+              <li class="bottomSheet__menuWrapper__list__item">
+                <a routerLink="/sign-up-donors" class="bottomSheet__menuWrapper__list__item__link">
+                  {{translate.translate.menu_donors}}
+                </a>
+              </li>
+              <li class="bottomSheet__menuWrapper__list__item">
+                <a routerLink="/about_us" class="bottomSheet__menuWrapper__list__item__link">
+                  {{translate.translate.menu_about_us}}
+                </a>
+              </li>
+              <li class="bottomSheet__menuWrapper__list__item">
+                <a routerLink="/contact_us" class="bottomSheet__menuWrapper__list__item__link">
+                  {{translate.translate.menu_contact_us}}
+                </a>
+              </li>
+              <li class="bottomSheet__menuWrapper__list__item">
+                <a routerLink="/blog" class="bottomSheet__menuWrapper__list__item__link">
+                  {{translate.translate.menu_blog}}
+                </a>
+              </li>
+              <li class="bottomSheet__menuWrapper__list__item">
+                <button (click)="translate.changeLang('en')" class="bottomSheet__menuWrapper__list__item__language">Eng</button>
+              </li>
+              <li class="bottomSheet__menuWrapper__list__item">
+                <button (click)="translate.changeLang('hy')" class="bottomSheet__menuWrapper__list__item__language">Հայ</button>
+              </li>
+              <li class="bottomSheet__menuWrapper__list__item">
+                <button (click)="translate.changeLang('ru')" class="bottomSheet__menuWrapper__list__item__language">Рус</button>
+              </li>
+              <li class="bottomSheet__menuWrapper__list__item">
+                <div class="bottomSheet__signIn">
+                  <a class="bottomSheet__signInWrapper" *ngIf="rout.url !== '/sign-in' && rout.url !== '/my-profile'" (click)="openModal(template)">
+                    <img class="bottomSheet__signInImage" src="../../../assets/Images/cooliconBlack.png" alt="No image">
+                    <span class="bottomSheet__signInDesc">{{translate.translate.sign_in}}</span>
+                  </a>
+                  <a class="bottomSheet__signInWrapper" *ngIf="rout.url === '/my-profile'" >
+                    <img class="bottomSheet__signInImage" src="../../../assets/Images/cooliconBlack.png" alt="No image">
+                    <span class="bottomSheet__signInDesc">{{translate.translate.sign_out}}</span>
+                  </a>
+                </div>
+              </li>
+            </ul>
+      </div>
+    </div>
+  </div>
+  <!--Modal-->
+  <ng-template #template>
+    <div class="modal-body">
+      <div class="div-title-modal">
+        <h2>{{translate.translate.title_modal_signIn}}</h2>
+      </div>
+      <div class="div-buttons-modal">
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal"  aria-label="Close" (click)="modalRef?.hide()">{{translate.translate.btn_continue_modal}}</button>
+        <button type="button"  data-bs-dismiss="modal" (click)="navigateSignIn(true);modalRef?.hide()">{{translate.translate.btn_leave_anyway_modal}}</button>
+      </div>
+    </div>
+  </ng-template>
+</mat-nav-list>

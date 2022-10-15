@@ -1,0 +1,263 @@
+@import "../../../styles";
+
+.header {
+  width: 100%;
+  background-color: $color-shamrock;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logoWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  &__logoImg {
+    width: 41.61px;
+    height: 37.97px;
+    object-fit: cover;
+  }
+
+  &__logoImgMobile{
+    width: 41.61px;
+    height: 37.97px;
+    display: none;
+  }
+
+  &__logoDesc {
+    width: 110px;
+    font-family: $font-family-assistant;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    margin-top: 3.89px;
+  }
+
+  &__languages {
+    margin-right: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__language {
+    background-color: transparent;
+    border: none;
+    margin: 6px 6px 0 0;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #F8F8F8;
+    cursor: pointer;
+
+  }
+
+  &__menu__icon{
+    display: none;
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__menuWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  &__menuListWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+  &__menuList {
+    padding: 0;
+  }
+
+  &__menuListItem {
+    list-style-type: none;
+    display: inline-block;
+
+  }
+
+  &__menuLink {
+    text-decoration: none;
+    font-family: $font-family-assistant;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.85);
+
+  }
+
+  &__menuListItem:nth-child(-n+4) {
+    margin-right: 48px;
+  }
+
+  &__signIn {
+    display: flex;
+    width: 10%;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 17px;
+    right: 0;
+  }
+
+  &__signInWrapper {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__signInImage {
+    margin-right: 8px;
+  }
+
+  &__signInDesc {
+    font-family: $font-family-assistant;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #F8F8F8;
+  }
+}
+.active {
+  padding: 0 0 10px;
+  border-bottom: 2px solid #F8F8F8;
+}
+::ng-deep .modal{
+  z-index: 10000000;
+}
+.div-title-modal {
+  width: 100%;
+
+  h2 {
+    font-family: $font-family-assistant;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin: 24px auto 88px;
+    padding-bottom: 16px;
+    border-bottom: 0.5px solid rgba(25, 72, 102, 0.5);;
+    color: $color-biscay;
+    width: 90%;
+  }
+
+}
+.div-buttons-modal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  button:first-child {
+    background: $color-shamrock;
+    border-radius: 10px;
+    font-family: $font-family-assistant;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    color: #FFFFFF;
+    width: 100%;
+    border: none;
+  }
+
+  button:last-child {
+    background: #F8F8F8;
+    border: 0.5px solid rgba(25, 72, 102, 0.3);
+    box-shadow: 0 2px 8px rgba(25, 72, 102, 0.16);
+    border-radius: 10px;
+    font-family: $font-family-assistant;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-biscay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    margin: 24px 0;
+  }
+}
+@media screen and (max-width: 1380px){
+  .container{
+    width: 95%;
+  }
+}
+@media screen and (max-width: 768px){
+  .header{
+    background: #F8F8F8;
+    box-shadow: 0 2px 24px rgba(61, 61, 61, 0.18);
+    padding: 22px 0;
+
+    &__menu{
+      display: none;
+    }
+    &__logoImg {
+      display: none;
+    }
+
+    &__logoDesc{
+      display: none;
+    }
+
+    &__logoImgMobile{
+      display: block;
+    }
+    &__language{
+      display: none;
+    }
+    &__menu__icon{
+      display: block;
+      margin-top: 27px;
+    }
+  }
+
+}
+

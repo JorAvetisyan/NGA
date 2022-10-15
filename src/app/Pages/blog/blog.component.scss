@@ -1,0 +1,12 @@
+@import "../../../styles";
+.blog{
+    &__title{
+      text-align: center;
+      font-family: $font-family-assistant;
+      font-size: 60px;
+      margin-top: 25px;
+      color: $color-biscay;
+
+    }
+  }
+

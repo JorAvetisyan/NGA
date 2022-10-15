@@ -1,3 +1,6 @@
+@import "app/Mixins/veriable";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+//Assistant
 @font-face {
   font-family: 'Assistant';
   src: url('assets/Fonts/AssistantFont/Assistant-ExtraBold.woff2') format('woff2'),
@@ -54,8 +57,79 @@
   font-style: normal;
   font-display: swap;
 }
-$color_green: #34C88A;
-$color_blue: #194866;
+//Arial
+//@font-face {
+//  font-family: 'Gothic A1';
+//  src: url('src/assets/Fonts/ArialFont/GothicA1-Black.woff2') format('woff2'),
+//  url('src/assets/Fonts/ArialFont/GothicA1-Black.woff') format('woff');
+//  font-weight: 900;
+//  font-style: normal;
+//  font-display: swap;
+//}
+//@font-face {
+//  font-family: 'Gothic A1';
+//  src: url('src/assets/Fonts/ArialFont/GothicA1-Bold.woff2') format('woff2'),
+//  url('src/assets/Fonts/ArialFont/GothicA1-Bold.woff') format('woff');
+//  font-weight: bold;
+//  font-style: normal;
+//  font-display: swap;
+//}
+//@font-face {
+//  font-family: 'Gothic A1';
+//  src: url('src/assets/Fonts/ArialFont/GothicA1-ExtraBold.woff2') format('woff2'),
+//  url('src/assets/Fonts/ArialFont/GothicA1-ExtraBold.woff') format('woff');
+//  font-weight: bold;
+//  font-style: normal;
+//  font-display: swap;
+//}
+//@font-face {
+//  font-family: 'Gothic A1';
+//  src: url('src/assets/Fonts/ArialFont/GothicA1-ExtraLight.woff2') format('woff2'),
+//  url('src/assets/Fonts/ArialFont/GothicA1-ExtraLight.woff') format('woff');
+//  font-weight: 200;
+//  font-style: normal;
+//  font-display: swap;
+//}
+//@font-face {
+//  font-family: 'Gothic A1';
+//  src: url('src/assets/Fonts/ArialFont/GothicA1-Medium.woff2') format('woff2'),
+//  url('src/assets/Fonts/ArialFont/GothicA1-Medium.woff') format('woff');
+//  font-weight: 500;
+//  font-style: normal;
+//  font-display: swap;
+//}
+//@font-face {
+//  font-family: 'Gothic A1';
+//  src: url('src/assets/Fonts/ArialFont/GothicA1-Light.woff2') format('woff2'),
+//  url('src/assets/Fonts/ArialFont/GothicA1-Light.woff') format('woff');
+//  font-weight: 300;
+//  font-style: normal;
+//  font-display: swap;
+//}
+//@font-face {
+//  font-family: 'Gothic A1';
+//  src: url('src/assets/Fonts/ArialFont/GothicA1-SemiBold.woff2') format('woff2'),
+//  url('src/assets/Fonts/ArialFont/GothicA1-SemiBold.woff') format('woff');
+//  font-weight: 600;
+//  font-style: normal;
+//  font-display: swap;
+//}
+//@font-face {
+//  font-family: 'Gothic A1';
+//  src: url('src/assets/Fonts/ArialFont/GothicA1-Regular.woff2') format('woff2'),
+//  url('src/assets/Fonts/ArialFont/GothicA1-Regular.woff') format('woff');
+//  font-weight: normal;
+//  font-style: normal;
+//  font-display: swap;
+//}
+//@font-face {
+//  font-family: 'Gothic A1';
+//  src: url('src/assets/Fonts/ArialFont/GothicA1-Thin.woff2') format('woff2'),
+//  url('src/assets/Fonts/ArialFont/GothicA1-Thin.woff') format('woff');
+//  font-weight: 100;
+//  font-style: normal;
+//  font-display: swap;
+//}
 html,
 body {
   margin: 0;
@@ -63,4 +137,15 @@ body {
 }
 *{
   box-sizing: border-box;
+}
+
+.container{
+  width: 1280px;
+  margin: 0 auto;
+}
+input{
+  outline: none;
+}
+select{
+  outline: none;
 }

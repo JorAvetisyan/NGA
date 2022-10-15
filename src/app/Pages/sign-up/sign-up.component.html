@@ -1,0 +1,210 @@
+<div class="main">
+  <div class="container">
+    <div class="stepper">
+      <div class="container">
+        <div class="div-mat-stepper">
+          <mat-stepper headerPosition="bottom">
+            <mat-step>
+              <div class="content-sign-up-page">
+                <div class="content-form">
+                  <h2 class="title">{{translate.translate.title_sign_up}}</h2>
+                  <p class="subtitle">{{translate.translate.subtitle}}</p>
+                  <form [formGroup]="form_sign_up">
+                    <div class="div-inputs-name-lastname">
+                      <input
+                        [ngClass]="{'borderError': form_sign_up.controls.name.hasError('required') && form_sign_up.controls.name.touched}"
+                        type="text" placeholder="{{translate.translate.placeholder_name}}" formControlName="name">
+                      <span class="showErrorName"
+                            *ngIf="form_sign_up.controls.name.hasError('required') && form_sign_up.controls.name.touched"
+                      >{{translate.translate.error_name}}</span>
+                      <input
+                        [ngClass]="{'borderError': form_sign_up.controls.last_name.hasError('required') && form_sign_up.controls.last_name.touched}"
+                        type="text" placeholder="{{translate.translate.placeholder_last_name}}"
+                        formControlName="last_name">
+                      <span class="showErrorLastName"
+                            *ngIf="form_sign_up.controls.last_name.hasError('required') && form_sign_up.controls.last_name.touched">{{translate.translate.error_last_name}}</span>
+                    </div>
+                    <div class="div-input-email">
+                      <input [ngClass]="{'borderError': form_sign_up.controls.email.hasError('required')  && form_sign_up.controls.email.touched || form_sign_up.controls.email.hasError('pattern')}" type="email"
+                             placeholder="{{translate.translate.placeholder_email}}" formControlName="email">
+                      <span class="showErrorEmail"
+                            *ngIf="form_sign_up.controls.email.hasError('required') && form_sign_up.controls.email.touched"
+                      > Email is required</span>
+                      <span class="showErrorEmail"
+                            *ngIf="form_sign_up.controls.email.hasError('pattern')"
+                      > {{translate.translate.error_email}}</span>
+                    </div>
+                    <div class="div-input-phone">
+                      <span *ngIf="form_sign_up.controls.phone_number.hasError('required') && form_sign_up.controls.phone_number.touched">
+                        {{translate.translate.error_phone_number}}
+                      </span>
+                      <input readonly
+                        [ngClass]="{'errorPhone': form_sign_up.controls.phone_short_code.hasError('required') && form_sign_up.controls.phone_short_code.touched}"
+                        type="number" placeholder="{{translate.translate.placeholder_short_code_phone}}"
+                             formControlName="phone_short_code">
+                      <input
+                        [ngClass]="{'errorPhone': form_sign_up.controls.phone_number.hasError('required') && form_sign_up.controls.phone_number.touched}"
+                        type="number" placeholder="{{translate.translate.placeholder_phone_number}}"
+                             formControlName="phone_number">
+                    </div>
+                    <div class="div-input-region">
+                      <span *ngIf="form_sign_up.controls.reg.hasError('required') && form_sign_up.controls.reg.touched">
+                        {{translate.translate.error_reg}}
+                      </span>
+                      <select formControlName="reg" [ngClass]="{'borderErrorRegion': form_sign_up.controls.reg.hasError('required') && form_sign_up.controls.reg.touched}">
+                        <option hidden>{{translate.translate.placeholder_region}}</option>
+                        <option>{{translate.translate.region_sh}}</option>
+                        <option>{{translate.translate.region_ar}}</option>
+                        <option>{{translate.translate.region_ge}} </option>
+                        <option>{{translate.translate.region_lo}} </option>
+                        <option>{{translate.translate.region_sy}}</option>
+                        <option>{{translate.translate.region_v_dz}}</option>
+                      </select>
+                      <img src="../../../assets/Images/vector_bottom.png" alt="No image">
+                    </div>
+                    <div class="div-input-city">
+                       <span
+                         *ngIf="form_sign_up.controls.city.hasError('required') && form_sign_up.controls.city.touched">
+                         City, Village is required
+                       </span>
+                      <ng-multiselect-dropdown
+                        [ngClass]="{'errorCity': form_sign_up.controls.city.hasError('required') && form_sign_up.controls.city.touched}"
+                        [placeholder]=translate.translate.placeholder_city_or_village
+                        [settings]="dropdownSettings"
+                        [data]="citiesList"
+                        [formControl]="form_sign_up.controls.city"
+                      >
+                      </ng-multiselect-dropdown>
+                      <img src="../../../assets/Images/vector_bottom.png" alt="No image">
+                    </div>
+                    <div class="div-input-school">
+                       <span
+                         *ngIf="form_sign_up.controls.school.hasError('required') && form_sign_up.controls.school.touched">
+                          School is required
+                       </span>
+                      <ng-multiselect-dropdown
+                        [ngClass]="{'errorSchool': form_sign_up.controls.school.hasError('required') && form_sign_up.controls.school.touched}"
+                        [placeholder]=translate.translate.placeholder_school
+                        [settings]="dropdownSettings"
+                        [data]="schoolList"
+                        [formControl]="form_sign_up.controls.school"
+                      >
+                      </ng-multiselect-dropdown>
+                      <img src="../../../assets/Images/vector_bottom.png" alt="No image">
+                    </div>
+                    <div class="div-input-subject">
+                       <span
+                         *ngIf="form_sign_up.controls.subject.hasError('required') && form_sign_up.controls.subject.touched">
+                          Subject is required
+                       </span>
+                      <ng-multiselect-dropdown
+                        [ngClass]="{'errorSubject': form_sign_up.controls.subject.hasError('required') && form_sign_up.controls.subject.touched}"
+                        [placeholder]=translate.translate.placeholder_subject
+                        [settings]="dropdownSettings"
+                        [data]="subjectsList"
+                        [formControl]="form_sign_up.controls.subject"
+                      >
+                      </ng-multiselect-dropdown>
+                      <img src="../../../assets/Images/vector_bottom.png" alt="No image">
+                    </div>
+                    <div class="div-input-grade">
+                       <span
+                         *ngIf="form_sign_up.controls.grade.hasError('required') && form_sign_up.controls.grade.touched">
+                           Grade is required
+                       </span>
+                      <ng-multiselect-dropdown
+                        [ngClass]="{'errorGrade': form_sign_up.controls.grade.hasError('required') && form_sign_up.controls.grade.touched}"
+                        [placeholder]=translate.translate.placeholder_grade
+                        [settings]="dropdownSettings"
+                        [data]="gradeList"
+                        [formControl]="form_sign_up.controls.grade"
+                      >
+                      </ng-multiselect-dropdown>
+                      <img src="../../../assets/Images/vector_bottom.png" alt="No image">
+                    </div>
+                    <div class="div-input-password">
+                      <input [ngClass]="{'borderError': form_sign_up.controls.pass.hasError('minlength') || form_sign_up.controls.pass.hasError('required') && form_sign_up.controls.pass.touched}"
+                             [type]="password" placeholder="{{translate.translate.placeholder_password}}"
+                             formControlName="pass">
+                      <span class="showErrorPassword"
+                            *ngIf="form_sign_up.controls.pass.hasError('minlength') || form_sign_up.controls.pass.hasError('required') && form_sign_up.controls.pass.touched">{{translate.translate.error_password}}</span>
+                      <button type="button" (click)="onClickPassword()">
+                        <img src="../../../assets/Images/hidePassword.png" aria-hidden="true" *ngIf="!show"
+                             alt="No images"
+                             class="show">
+                        <img src="../../../assets/Images/showPassword.png" aria-hidden="true" *ngIf="show"
+                             alt="No images"
+                             class="show">
+                      </button>
+                    </div>
+                    <div class="div-input-confirm-password">
+                      <input [ngClass]="{'borderError': form_sign_up.controls.confirm_pass.hasError('required') && form_sign_up.controls.confirm_pass.touched || match}"
+                             [type]="confirmPassword"
+                             placeholder="{{translate.translate.placeholder_confirm_password}}"
+                             formControlName="confirm_pass">
+                      <span class="showErrorConfirmPassword"
+                            *ngIf =" form_sign_up.controls.confirm_pass.hasError('required') && form_sign_up.controls.confirm_pass.touched || match">{{translate.translate.error_confirm_password}}</span>
+                      <button type="button" (click)="onClickConfirmPassword()">
+                        <img src="../../../assets/Images/hidePassword.png" aria-hidden="true" *ngIf="!showConfirm"
+                             alt="No images" class="show">
+                        <img src="../../../assets/Images/showPassword.png" aria-hidden="true" *ngIf="showConfirm"
+                             alt="No images" class="show">
+                      </button>
+                    </div>
+                    <div class="div-button-ok">
+                      <a routerLink="/sign-up-donors">{{translate.translate.reg_as_donor}}</a>
+                      <button matStepperNext (click)="postFormData()" >{{translate.translate.btn_ok}}</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </mat-step>
+            <mat-step>
+              <div class="content-verify-account-page">
+                <div class="content-verify">
+                  <div class="div-form-verify">
+                    <div class="div-icon-close">
+                      <a href="#">
+                        <img src="../../../assets/Images/icon-close.png" alt="No image">
+                      </a>
+                    </div>
+                    <h2>{{translate.translate.title_verify_account}}</h2>
+                    <p>{{translate.translate.subtitle_verify_account}}</p>
+                    <div class="div-input-code-verify">
+                      <input type="number" placeholder="{{translate.translate.placeholder_code_verify}}">
+                    </div>
+                    <div class="div-btn-ok-verify">
+                      <button>
+                        <a href="#">
+                          {{translate.translate.btn_ok_verify}}
+                        </a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </mat-step>
+            <mat-step label="" state="">
+              <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+              </div>
+            </mat-step>
+            <mat-step label="" state="">
+              <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+              </div>
+            </mat-step>
+            <mat-step label="" state="">
+              <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+              </div>
+            </mat-step>
+          </mat-stepper>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

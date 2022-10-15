@@ -1,45 +1,9 @@
 {
-  "logo": [
-    {
-      "icon_logo_white": "src/assets/Images/logo.png",
-      "icon_logo_colorful" : "src/assets/Images/logoMobile.png",
-      "description": "Next Generation Armenia"
-    }
-  ],
-  "menu": [
+  "user": [
     {
       "id": 1,
-      "content": "Teachers"
-    },
-    {
-      "id": 2,
-      "content": "Donors"
-    },
-    {
-      "id": 3,
-      "content": "About us"
-    },
-    {
-      "id": 4,
-      "content": "Contact us"
-    },
-    {
-      "id": 5,
-      "content": "Blog"
-    }
-  ],
-  "languages": [
-    {
-      "id": 1,
-      "language": "Eng"
-    },
-    {
-      "id": 2,
-      "language": "Հայ"
-    },
-    {
-      "id": 3,
-      "language": "Рус"
+      "email": "nga@mail.ru",
+      "password": "nga2022"
     }
   ]
 }

@@ -1,0 +1,59 @@
+<div class="header">
+  <div class="header__wrapper">
+    <div class="header__logoSection container">
+      <div class="header__logoWrapper">
+        <div class="header__logo" routerLink="/sign-in">
+          <img class="header__logoImg" src="../../../assets/Images/logo.png" alt="No image">
+          <img class="header__logoImgMobile" src="../../../assets/Images/logoMobile.png" alt="No image">
+          <span class="header__logoDesc">{{translate.translate.logo_text}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="header__languages">
+      <img class="header__menu__icon" (click)="openBottomSheet()" src="assets/Images/mobileMenuBlack.png" alt="No image">
+      <button (click)="translate.changeLang('en')" class="header__language">Eng</button>
+      <button (click)="translate.changeLang('hy')" class="header__language">Հայ</button>
+      <button (click)="translate.changeLang('ru')" class="header__language">Рус</button>
+    </div>
+  </div>
+  <div class="header__menu">
+    <div class="header__menuSection container">
+      <div class="header__menuWrapper">
+        <div class="header__menuListWrapper">
+          <ul class="header__menuList">
+            <li class="header__menuListItem"><a routerLink="/sign-up" routerLinkActive="active" class="header__menuLink">{{translate.translate.menu_teachers}}</a></li>
+            <li class="header__menuListItem"><a routerLink="/sign-up-donors" routerLinkActive="active" class="header__menuLink">{{translate.translate.menu_donors}}</a></li>
+            <li class="header__menuListItem"><a routerLink="/about_us" routerLinkActive="active" class="header__menuLink">{{translate.translate.menu_about_us}}</a></li>
+            <li class="header__menuListItem"><a routerLink="/contact_us" routerLinkActive="active" class="header__menuLink">{{translate.translate.menu_contact_us}}</a></li>
+            <li class="header__menuListItem"><a routerLink="/blog" routerLinkActive="active" class="header__menuLink">{{translate.translate.menu_blog}}</a></li>
+          </ul>
+        </div>
+        <div class="header__signIn">
+          <a class="header__signInWrapper" *ngIf="rout.url !== '/sign-in' && rout.url !== '/my-profile'" (click)="openModal(template)">
+            <img class="header__signInImage" src="../../../assets/Images/coolicon.png" alt="No image">
+            <span class="header__signInDesc">{{translate.translate.sign_in}}</span>
+          </a>
+          <a class="header__signInWrapper" *ngIf="rout.url === '/my-profile'" >
+            <img class="header__signInImage" src="../../../assets/Images/coolicon.png" alt="No image">
+            <span class="header__signInDesc">{{translate.translate.sign_out}}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Modal-->
+  <ng-template #template>
+    <div class="modal-body">
+      <div class="div-title-modal">
+        <h2>{{translate.translate.title_modal_signIn}}</h2>
+      </div>
+      <div class="div-buttons-modal">
+        <button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal"  aria-label="Close" (click)="modalRef?.hide()">{{translate.translate.btn_continue_modal}}</button>
+        <button type="button"  data-bs-dismiss="modal" (click)="navigateSignIn(true);modalRef?.hide()">{{translate.translate.btn_leave_anyway_modal}}</button>
+      </div>
+    </div>
+  </ng-template>
+
+</div>
+
+
