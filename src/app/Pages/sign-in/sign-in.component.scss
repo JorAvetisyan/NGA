@@ -211,3 +211,30 @@
     }
   }
 }
+@media screen and (max-width: 1320px){
+  .container{
+    width: 98% !important;
+  }
+
+}
+@media screen and (max-width: 550px){
+    .content-form-signIn{
+      width: 100% !important;
+    }
+
+}
+@media screen and (max-width: 450px){
+  .div-buttons-teacher-donor{
+   button:first-child{
+     a{
+       padding: 9px 27px !important;
+     }
+   }
+    button:last-child{
+      a{
+        padding: 9px 27px !important;
+      }
+    }
+  }
+
+}

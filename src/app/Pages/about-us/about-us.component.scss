@@ -8,3 +8,8 @@
       color: $color-biscay;
   }
 }
+@media screen and (max-width: 1320px){
+  .container{
+    width: 98% !important;
+  }
+}

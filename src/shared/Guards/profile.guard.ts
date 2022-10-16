@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
-import {CanActivate, Router} from '@angular/router';
+import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree} from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class AuthGuard implements CanActivate {
+export class ProfileGuard implements CanActivate {
   constructor(private router: Router) {
   }
   canActivate() {
     if (!localStorage.getItem('access_token')) {
-      this.router.navigateByUrl('/profile');
+      this.router.navigateByUrl('/sign-in');
       return false;
     }
     return true;

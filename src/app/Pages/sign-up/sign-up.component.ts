@@ -55,7 +55,7 @@ export class SignUpComponent implements OnInit {
     phone_short_code: ['',Validators.required],
     phone_number: ['',Validators.required],
     pass: ['',[Validators.required,Validators.maxLength(20),Validators.minLength(6)]],
-    confirm_pass: ['', [Validators.required]],
+    confirm_pass: ['', Validators.compose( [Validators.required, Validators.minLength(6), Validators.maxLength(20)])],
     reg: ['', [Validators.required]],
     city: ['', [Validators.required]],
     school: ['', [Validators.required]],
@@ -73,7 +73,7 @@ export class SignUpComponent implements OnInit {
   ngOnInit(): void {
   }
   getFormData(){
-  console.log(this.form_sign_up.getRawValue())
+
 }
   onClickPassword() {
     if (this.password === 'password') {
@@ -96,15 +96,22 @@ export class SignUpComponent implements OnInit {
   }
   postFormData(){
     this.request.postUserData(this.form_sign_up.getRawValue()).subscribe((res:any)=>{
-      console.log(res.statusCode);
+
     })
   }
-  matchPassword(){
-    if(this.form_sign_up.controls.pass.value !== this.form_sign_up.controls.confirm_pass.value){
-      this.match = true
-    }else{
-      this.match = false
-    }
-  }
+  // matchPassword(pass: string, confirmpass: string){
+  //   if(this.form_sign_up.controls[pass].value === this.form_sign_up.controls[confirmpass].value){
+  //     this.match = true;
+  //     this.form_sign_up.get('confirm_pass')?.setErrors(null)
+  //     // this.form_sign_up.controls.['pass'].value === this.form_sign_up.controls.['confirm_pass'].value
+  //     // this.form_sign_up.get('confirm_pass')?.setErrors({'match': null})
+  //     console.log('nuynne')
+  //   }else{
+  //     this.match = false;
+  //     this.form_sign_up.get('pass')
+  //     this.form_sign_up.get('confirm_pass')?.setErrors({'match':'ggg'})
+  //     console.log('nuyny che')
+  //   }
+  // }
 
 }

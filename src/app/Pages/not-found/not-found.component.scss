@@ -1,0 +1,10 @@
+@import "src/styles";
+.notFound{
+  &__title{
+    margin: 40px;
+    font-size: 50px;
+    font-family: $font-family-assistant;
+    color: $color-monza;
+    text-align: center;
+  }
+}

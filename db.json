@@ -4,6 +4,1126 @@
       "id": 1,
       "email": "nga@mail.ru",
       "password": "nga2022"
+    },
+    {
+      "name": "aa",
+      "last_name": "aa",
+      "email": "aa@mail.ru",
+      "phone_short_code": 132312,
+      "phone_number": 2133,
+      "pass": "1231212",
+      "confirm_pass": "13221323",
+      "reg": "Shirak",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 2,
+          "item_text": "2"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "asda",
+      "last_name": "sdasdas",
+      "email": "asdasd@mail.ru",
+      "phone_short_code": 123312,
+      "phone_number": 123123321,
+      "pass": "123456",
+      "confirm_pass": "123456",
+      "reg": "Shirak",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 2,
+          "item_text": "Subject 2"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "asd",
+      "last_name": "asdads",
+      "email": "asdasd@mail.ru",
+      "phone_short_code": 123,
+      "phone_number": 123123213,
+      "pass": "123123",
+      "confirm_pass": "asdasd",
+      "reg": "Aragatsotn",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 3,
+          "item_text": "3"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "asd",
+      "last_name": "asdads",
+      "email": "asdasd@mail.ru",
+      "phone_short_code": 123,
+      "phone_number": 123123213,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Aragatsotn",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 3,
+          "item_text": "3"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "asdas",
+      "last_name": "asdasd",
+      "email": "asdasd@mail.ru",
+      "phone_short_code": 123,
+      "phone_number": 123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Shirak",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "asdas",
+      "last_name": "dasdas",
+      "email": "asdas@mail.ru",
+      "phone_short_code": 1231,
+      "phone_number": 123123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Aragatsotn",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "name": "asdas",
+      "last_name": "dasdas",
+      "email": "asdas@mail.ru",
+      "phone_short_code": 1231,
+      "phone_number": 123123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Aragatsotn",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "name": "asdas",
+      "last_name": "dasdas",
+      "email": "asdas@mail.ru",
+      "phone_short_code": 1231,
+      "phone_number": 123123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Aragatsotn",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 9
+    },
+    {
+      "name": "asdas",
+      "last_name": "dasdas",
+      "email": "asdas@mail.ru",
+      "phone_short_code": 1231,
+      "phone_number": 123123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Aragatsotn",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 10
+    },
+    {
+      "name": "asdas",
+      "last_name": "dasdas",
+      "email": "asdas@mail.ru",
+      "phone_short_code": 1231,
+      "phone_number": 123123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Aragatsotn",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 11
+    },
+    {
+      "name": "asdas",
+      "last_name": "dasdas",
+      "email": "asdas@mail.ru",
+      "phone_short_code": 1231,
+      "phone_number": 123123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Aragatsotn",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 12
+    },
+    {
+      "name": "asdas",
+      "last_name": "dasdas",
+      "email": "asdas@mail.ru",
+      "phone_short_code": 1231,
+      "phone_number": 123123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Aragatsotn",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 13
+    },
+    {
+      "name": "asdas",
+      "last_name": "dasdas",
+      "email": "asdas@mail.ru",
+      "phone_short_code": 1231,
+      "phone_number": 123123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Aragatsotn",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 14
+    },
+    {
+      "name": "asdas",
+      "last_name": "dasdas",
+      "email": "asdas@mail.ru",
+      "phone_short_code": 1231,
+      "phone_number": 123123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Aragatsotn",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 15
+    },
+    {
+      "name": "asdas",
+      "last_name": "dasdas",
+      "email": "asdas@mail.ru",
+      "phone_short_code": 1231,
+      "phone_number": 123123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Aragatsotn",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 16
+    },
+    {
+      "name": "132",
+      "last_name": "123",
+      "email": "123123@mail.ru",
+      "phone_short_code": 13123,
+      "phone_number": 123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Gexarquniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 17
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "123456",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 18
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "123456",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 19
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "123456",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 20
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "123456",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 21
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 22
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 23
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 24
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 25
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 26
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 27
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 28
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 29
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 30
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 31
+    },
+    {
+      "name": "123123",
+      "last_name": "123132",
+      "email": "12123@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 31212,
+      "pass": "asdasd",
+      "confirm_pass": "asdasd",
+      "reg": "Syuniq",
+      "city": [
+        {
+          "item_id": 1,
+          "item_text": "Yerevan"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "School 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Subject 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 32
+    },
+    {
+      "name": "asd",
+      "last_name": "asdasd",
+      "email": "asds@mail.ru",
+      "phone_short_code": 132,
+      "phone_number": 123123,
+      "pass": "asdasd",
+      "confirm_pass": "asdasdkjl",
+      "reg": "Ширак",
+      "city": [
+        {
+          "item_id": 2,
+          "item_text": "Гюмри"
+        }
+      ],
+      "school": [
+        {
+          "item_id": 1,
+          "item_text": "Школа 1"
+        }
+      ],
+      "subject": [
+        {
+          "item_id": 1,
+          "item_text": "Предмет 1"
+        }
+      ],
+      "grade": [
+        {
+          "item_id": 1,
+          "item_text": "1"
+        }
+      ],
+      "id": 33
     }
   ]
 }

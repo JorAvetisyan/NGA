@@ -11,9 +11,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatStepperModule} from "@angular/material/stepper";
 import {RecoverPasswordComponent} from './Pages/recover-password/recover-password.component';
 import {SignUpDonorComponent} from './Pages/sign-up-donor/sign-up-donor.component';
-import {AboutUsComponent} from './Pages/about-us/about-us.component';
 import {ContactUsComponent} from './Pages/contact-us/contact-us.component';
-import {BlogComponent} from './Pages/blog/blog.component';
 import {SignUpComponent} from "./Pages/sign-up/sign-up.component";
 import { ModalModule} from "ngx-bootstrap/modal";
 import { ProfileComponent } from './Pages/profile/profile.component';
@@ -21,46 +19,51 @@ import {HttpClientModule} from "@angular/common/http";
 import {MatListModule} from "@angular/material/list";
 import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
 import { BottomSheetComponent } from './Components/bottom-sheet/bottom-sheet.component';
+import { NotFoundComponent } from './Pages/not-found/not-found.component';
 
 
 const route: Routes = [
   {
     path: "",
-    component: SignInComponent
+    loadChildren: () => import('./Pages/sign-in/sign-in/sign-in-routing.module').then(m => m.SignInRoutingModule)
   },
   {
     path: "my-profile",
     canActivate: [AuthGuard],
-    component: ProfileComponent
+    loadChildren: () => import('./Pages/profile/profile/profile-routing.module').then(m => m.ProfileRoutingModule)
   },
   {
     path: "sign-up",
-    component: SignUpComponent
-  },
+    loadChildren: () => import('./Pages/sign-up/sign-up/sign-up-routing.module').then(m => m.SignUpRoutingModule)  },
   {
     path: "sign-in",
-    component: SignInComponent
+    loadChildren: () => import('./Pages/sign-in/sign-in/sign-in-routing.module').then(m => m.SignInRoutingModule)
   },
   {
     path: 'recover-password',
-    component: RecoverPasswordComponent
+    loadChildren: () => import('./Pages/recover-password/recover-password/recover-password-routing.module').then(m => m.RecoverPasswordRoutingModule)
   },
   {
     path: 'sign-up-donors',
-    component: SignUpDonorComponent
+    loadChildren: () => import('./Pages/sign-up-donor/sign-up-donor/sign-up-donor-routing.module').then(m => m.SignUpDonorRoutingModule)
   },
   {
     path: 'about_us',
-    component: AboutUsComponent
+    loadChildren: () => import('./Pages/about-us/about-us/about-us-routing.module').then(m => m.AboutUsRoutingModule)
   },
   {
     path: 'contact_us',
-    component: ContactUsComponent
+    loadChildren: () => import('./Pages/contact-us/contact-us/contact-us-routing.module').then(m => m.ContactUsRoutingModule)
   },
   {
     path: 'blog',
-    component: BlogComponent
+    loadChildren: () => import('./Pages/blog/blog/blog-routing.module').then(m => m.BlogRoutingModule)
+  },
+  {
+    path: '**',
+    component: NotFoundComponent
   }
+
 ]
 
 @NgModule({
@@ -70,12 +73,10 @@ const route: Routes = [
     SignInComponent,
     RecoverPasswordComponent,
     SignUpDonorComponent,
-    AboutUsComponent,
-    ContactUsComponent,
-    BlogComponent,
     SignUpComponent,
     ProfileComponent,
-    BottomSheetComponent
+    BottomSheetComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,

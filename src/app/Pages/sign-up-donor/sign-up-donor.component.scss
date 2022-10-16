@@ -2,7 +2,6 @@
 
 .main {
   width: 100%;
-  padding: 16px 0;
   background-color: #F8F8F8;
 
   .container {
@@ -105,7 +104,7 @@
             color: #FFFFFF !important;
             text-decoration: none !important;
             display: inline-block;
-            padding: 12px 39px;
+            padding: 17px 39px;
           }
         }
 
@@ -197,7 +196,20 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
-
+            position: relative;
+            span{
+              font-family: $font-family-assistant;
+              font-style: normal;
+              font-weight: 300;
+              font-size: 16px;
+              line-height: 24px;
+              color: $color-monza;
+              position: absolute;
+              top: -12px;
+              left: 14px;
+              background-image: linear-gradient(#F8F8F8, white);
+              z-index: 100;
+            }
             ::ng-deep .ng-valid{
               border: 0.5px solid  $color-shamrock;;
             }
@@ -212,6 +224,7 @@
               position: relative;
               margin: 0;
 
+
               select {
                 padding: 16px 16px 16px;
                 border: 0.5px solid rgba(25, 72, 102, 0.8);
@@ -224,6 +237,14 @@
                 font-size: 16px;
                 line-height: 24px;
                 color: $color_biscay;
+              }
+
+              .borderErrorRegion{
+                border: 0.5px solid $color-monza;
+              }
+
+              .ng-valid.ng-touched{
+                border: 0.5px solid $color-shamrock;
               }
 
               img {
@@ -241,6 +262,9 @@
               input {
                 border-radius: 0 10px 10px 0;
                 width: 100%;
+              }
+              .borderError{
+                border: 0.5px solid $color-monza;
               }
             }
 
@@ -559,12 +583,14 @@
   }
   .content-verify-account-page {
     width: 100%;
+    margin-bottom: 40px;
 
     .content-verify {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
+
 
       .div-form-verify {
         width: 432px;
@@ -634,7 +660,7 @@
         }
 
         .div-btn-ok-verify {
-          margin: 532px 0 24px;
+          margin: 332px 0 24px;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -685,5 +711,119 @@
   ::ng-deep .mat-stepper-header-position-bottom .mat-horizontal-stepper-header-container {
     width: 300px !important;
     margin: 0 auto;
+  }
+  .mat-stepper-next:disabled{
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 1320px){
+  .container{
+    width: 98% !important;
+    padding: 0 !important;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  ::ng-deep .dropdown-btn{
+    padding: 8px 10px !important;
+  }
+
+}
+@media screen and (max-width: 550px){
+  input{
+    padding: 8px 40px 8px 5px !important;
+  }
+  input::placeholder{
+    font-size: 14px !important;
+  }
+  select{
+    padding: 8px 5px 8px 5px !important ;
+  }
+  .div-phone-number-select{
+    .div-select-short-code-number{
+      img{
+        top: 19px !important;
+        left: 90px !important;
+      }
+    }
+    .div-select-short-code-number{
+      width: 40%;
+      select{
+        width: 100%;
+      }
+    }
+    .div-button-reg-as{
+      a{
+        font-size: 15px !important;
+      }
+    }
+  }
+  .div-inputs-name-lastname-donors,
+  .div-input-email-donors,
+  .div-phone-number-select,
+  .div-country-reg-donors,
+  .div-region-reg-donors,
+  .div-city-reg-donors,
+  .div-password-reg-donors,
+  .div-confirm-password-reg-donors{
+    span{
+      font-size: 10px !important;
+    }
+  }
+  .div-button-reg-as{
+    button{
+      padding: 0 !important;
+    }
+    a{
+      font-size: 15px !important;
+    }
+  }
+  .div-form-sign-up-donors {
+    button{
+      a{
+        font-size: 15px !important;
+      }
+    }
+    a:last-child {
+      padding: 12px 35px !important;
+    }
+  }
+  .error_last_name_donors{
+    right: 50px !important;
+  }
+  .div-btn-ok-verify {
+    margin-top: 250px !important;
+    button{
+      a{
+        padding: 8px 0 !important;
+        width: 100% !important;
+      }
+    }
+  }
+  .content-verify{
+    .div-form-verify{
+      width: auto !important;
+    }
+  }
+  .div-password-reg-donors {
+    button{
+      top: 5px !important;
+    }
+
+  }
+  .div-confirm-password-reg-donors{
+    button{
+      top: 5px !important;
+    }
+  }
+  .show{
+    width: 15px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 400px){
+  .div-select-short-code-number{
+    width: 55% !important;
+
   }
 }

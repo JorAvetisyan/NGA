@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {TranslateService} from "../../../shared/Services/translate.service";
 import {IDropdownSettings} from "ng-multiselect-dropdown";
 import {FormBuilder, Validators} from "@angular/forms";
+import {RequestService} from "../../../shared/Services/request.service";
 
 @Component({
   selector: 'app-sign-up-donor',
@@ -18,6 +19,7 @@ export class SignUpDonorComponent implements OnInit {
     name: ['', Validators.compose( [Validators.required, Validators.minLength(3)])],
     last_name: ['',  Validators.compose( [Validators.required, Validators.minLength(3)])],
     email: ['',Validators.compose( [Validators.required, Validators.pattern(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/)])],
+    phone_number_short_code: ['', Validators.required],
     phone_number: ['', Validators.required],
     country: ['', Validators.required],
     region: ['', Validators.required],
@@ -53,18 +55,19 @@ export class SignUpDonorComponent implements OnInit {
   };
   constructor(
     public translate:TranslateService,
-    public fb: FormBuilder
+    public fb: FormBuilder,
+    public  request: RequestService
     ) { }
 
   ngOnInit(): void {
 
   }
   onItemSelect(item: any) {
-    console.log(item);
+
   }
 
   onSelectAll(items: any) {
-    console.log(items);
+
   }
   onClickPassword() {
     if (this.password === 'password') {
@@ -90,5 +93,9 @@ export class SignUpDonorComponent implements OnInit {
     }else{
       this.match = false
     }
+  }
+  postFormData(){
+    this.request.postUserData(this.form_sign_up_donor.getRawValue()).subscribe((res:any)=>{
+    })
   }
 }
