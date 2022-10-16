@@ -39,5 +39,8 @@ export class HeaderComponent implements OnInit {
   openBottomSheet(): void {
     this._bottomSheet.open(BottomSheetComponent);
   }
-
+  signOut () {
+    localStorage.clear();
+    this.rout.navigate(['/sign-in']);
+  }
 }

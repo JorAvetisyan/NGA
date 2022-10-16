@@ -13,17 +13,10 @@ export class SignInComponent implements OnInit {
   public password = 'password';
   public show = false;
   public errorSignIn = false;
+  private isSubmitted: boolean = true;
   public form_sign_in = this.fb.group({
-    name: ['', Validators.required],
-    last_name: ['',Validators.required],
     email: ['',[Validators.pattern(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/),Validators.required]],
-    phone_short_code: ['',Validators.required],
-    phone_number: ['',Validators.required],
-    pass: ['',[Validators.required,Validators.maxLength(20),Validators.minLength(6)]],
-    confirm_pass: ['', [Validators.required]],
-    reg: ['', [Validators.required]],
-    city: ['', [Validators.required]],
-    country: ['', [Validators.required]]
+    password: ['',[Validators.required,Validators.maxLength(20),Validators.minLength(6)]],
   })
   constructor(
     public translate:TranslateService,
@@ -44,14 +37,13 @@ export class SignInComponent implements OnInit {
     }
   }
   getUserData(){
-    this.request.getUserData().subscribe((res:any)=>{
-      res.forEach((item:any)=>{
-        if((this.form_sign_in.controls.email.value == item.email) && (this.form_sign_in.controls.pass.value == item.password)){
-          this.route.navigateByUrl('/my-profile')
-        }else{
-          this.errorSignIn = true
-        }
+    if (this.form_sign_in.valid && this.isSubmitted) {
+      this.isSubmitted = false;
+      this.request.createData('https://reqres.in/api/login', this.form_sign_in.value).subscribe((res: any) => {
+        localStorage.setItem('access_token', res['token']);
+        this.route.navigateByUrl('/my-profile');
+        this.isSubmitted = true;
       })
-    })
+    }
   }
 }

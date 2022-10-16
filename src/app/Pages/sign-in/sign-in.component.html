@@ -8,7 +8,7 @@
             {{translate.translate.error_sign_in}}
         </span>
         <div class="div-form-signIn">
-          <form [formGroup]= "form_sign_in">
+          <form [formGroup]= "form_sign_in" (ngSubmit)="getUserData()">
             <div class="div-input-email-signIn">
               <span *ngIf="form_sign_in.controls.email.hasError('required') && form_sign_in.controls.email.touched || form_sign_in.controls.email.hasError('pattern')">
                 {{translate.translate.error_email}}
@@ -18,11 +18,11 @@
                      type="email" placeholder="{{translate.translate.placeholder_email_sign_in}}">
             </div>
             <div class="div-input-password-signIn">
-              <span *ngIf="form_sign_in.controls.pass.hasError('required') && form_sign_in.controls.pass.touched || form_sign_in.controls.pass.hasError('minlength') ">
+              <span *ngIf="form_sign_in.controls.password.hasError('required') && form_sign_in.controls.password.touched || form_sign_in.controls.password.hasError('minlength') ">
                 {{translate.translate.error_password}}
               </span>
-              <input formControlName="pass"
-                     [ngClass]="{'errorBorder': form_sign_in.controls.pass.hasError('required') && form_sign_in.controls.pass.touched || form_sign_in.controls.pass.hasError('minlength')}"
+              <input formControlName="password"
+                     [ngClass]="{'errorBorder': form_sign_in.controls.password.hasError('required') && form_sign_in.controls.password.touched || form_sign_in.controls.password.hasError('minlength')}"
                      [type]="password" placeholder="{{translate.translate.placeholder_password_sign_in}}">
               <button type="button" (click)="onClickPass()">
                 <img src="../../../assets/Images/hidePassword.png" aria-hidden="true" *ngIf="!show" alt="No images" class="show">
@@ -34,7 +34,7 @@
             </div>
             <div class="div-button-signIn">
               <button>
-                <a (click)="getUserData()">{{translate.translate.btn_sign_in}}</a>
+                {{translate.translate.btn_sign_in}}
               </button>
             </div>
           </form>

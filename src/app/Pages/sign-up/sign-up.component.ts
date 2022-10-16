@@ -99,19 +99,4 @@ export class SignUpComponent implements OnInit {
 
     })
   }
-  // matchPassword(pass: string, confirmpass: string){
-  //   if(this.form_sign_up.controls[pass].value === this.form_sign_up.controls[confirmpass].value){
-  //     this.match = true;
-  //     this.form_sign_up.get('confirm_pass')?.setErrors(null)
-  //     // this.form_sign_up.controls.['pass'].value === this.form_sign_up.controls.['confirm_pass'].value
-  //     // this.form_sign_up.get('confirm_pass')?.setErrors({'match': null})
-  //     console.log('nuynne')
-  //   }else{
-  //     this.match = false;
-  //     this.form_sign_up.get('pass')
-  //     this.form_sign_up.get('confirm_pass')?.setErrors({'match':'ggg'})
-  //     console.log('nuyny che')
-  //   }
-  // }
-
 }

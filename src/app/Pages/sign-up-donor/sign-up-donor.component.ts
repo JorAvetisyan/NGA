@@ -26,8 +26,6 @@ export class SignUpDonorComponent implements OnInit {
     city: ['', Validators.required],
     password: ['',Validators.compose( [Validators.required, Validators.minLength(6), Validators.maxLength(20)])],
     confirm_password: ['', Validators.compose( [Validators.required, Validators.minLength(6),Validators.maxLength(20)])]
-
-
   })
   citiesList = [
     {item_id: 1, item_text: this.translate.translate.city_y},

@@ -6,7 +6,7 @@ import {HttpClient, HttpHeaders} from "@angular/common/http";
 })
 export class RequestService {
   public API = 'http://localhost:3000'
-  header = new HttpHeaders({
+  private header = new HttpHeaders({
     "Content-type": "application/json"
   })
 
@@ -17,6 +17,10 @@ export class RequestService {
     return this.http.post(`${this.API}/user`, JSON.stringify(body), {headers: this.header})
   }
   getUserData(){
-    return this.http.get(`${this.API}/user`)
+    return this.http.get(`${this.API}/user`);
+  }
+
+  createData(url: string, body: any) {
+    return this.http.post(url, JSON.stringify(body), {headers: this.header})
   }
 }

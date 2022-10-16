@@ -33,7 +33,7 @@
             <img class="header__signInImage" src="../../../assets/Images/coolicon.png" alt="No image">
             <span class="header__signInDesc">{{translate.translate.sign_in}}</span>
           </a>
-          <a routerLink="/sign-in" class="header__signInWrapper" *ngIf="rout.url === '/my-profile'" >
+          <a (click)="signOut()" class="header__signInWrapper" *ngIf="rout.url === '/my-profile'" >
             <img class="header__signInImage" src="../../../assets/Images/coolicon.png" alt="No image">
             <span class="header__signInDesc">{{translate.translate.sign_out}}</span>
           </a>
